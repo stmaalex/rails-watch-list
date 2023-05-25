@@ -1,1 +1,17 @@
-<h1> it's me your list show ass </h1>
+<h1> Your List: "<%= @list.name %>" </h1>
+<br>
+  <%= link_to "Add a movie", new_list_bookmark_path(@list) %>
+  <br>
+<li class="list-group-item">
+<% @list.movies.each do |movie| %>
+<% bookmark = Bookmark.find_by(movie: movie, list: @list) %>
+  <%= movie.title  %>
+  <%= bookmark.comment %>
+   <%= link_to "Delete", bookmark_path(bookmark), data: {turbo_method: :delete, turbo_confirm: "Are you sure?"} %>
+  </li>
+<% end %>
+
+<br>
+<%= link_to "Back to all Lists", lists_path %>
+
+<%= link_to "Delete this list..", list_path(@list), data: {turbo_method: :delete, turbo_confirm: "Are you sure?"} %>

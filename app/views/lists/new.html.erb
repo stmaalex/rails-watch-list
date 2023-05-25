@@ -1,1 +1,7 @@
-<h1> it's me your lists new ass </h1>
+<h1> Create New List: </h1>
+
+<%= simple_form_for [@list] do |f| %>
+  <%= f.input :name  %>
+  <%= f.submit  %>
+
+<% end %>

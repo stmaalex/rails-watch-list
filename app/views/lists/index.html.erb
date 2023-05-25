@@ -1,1 +1,18 @@
-<h1> it's me your index lists ass </h1>
+<%# <h1> it's me your index lists ass </h1>
+<%= @lists %>
+
+<h1>Lists:</h1>
+<br>
+<%= link_to "New list", new_list_path %>
+<br>
+<br>
+<div id="lists">
+  <% @lists.each do |list| %>
+    <%= render list %>
+    <p>
+      <%= link_to "Show this list", list %>
+    </p>
+    <br>
+    <br>
+  <% end %>
+</div>
