@@ -1,17 +1,23 @@
 <%# <h1> it's me your index lists ass </h1>
 <%= @lists %>
 
-<h1>Lists:</h1>
-<br>
-<%= link_to "New list", new_list_path %>
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('<%= cl_image_path "v1685109624/newww_qpfm3q.png", crop: :fill %>')">
+  <div class="container">
+    <h1>Welcome to <strong> your available lists!</strong></h1>
+    <p>Browse through your collection or add new lists.</p>
+    <%= link_to "New list", new_list_path, class: "btn btn-ghost" %>
+    <%# <a id= "butty" class="btn btn-flat" href="#">Add new list</a> %>
+  </div>
+</div>
+
 <br>
 <br>
 <div id="lists">
   <% @lists.each do |list| %>
     <%= render list %>
-    <p>
-      <%= link_to "Show this list", list %>
-    </p>
+    <%# <p>
+      <%= link_to "Show this list", list, class: "btn btn-ghost" %>
+    <%# </p>  %>
     <br>
     <br>
   <% end %>

@@ -1,4 +1,6 @@
 <h1> Your List: "<%= @list.name %>" </h1>
+<%= cl_image_tag("nnidbsfbe1msihpkz7fh",
+      width: 400, height: 300, crop: :fill) %>
 <br>
   <%= link_to "Add a movie", new_list_bookmark_path(@list) %>
   <br>
