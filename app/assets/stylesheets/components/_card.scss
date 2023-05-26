@@ -1,11 +1,30 @@
+// .list-container .row {
+//   display: flex;
+//   justify-content: center;
+// }
+
 .card{
   height: 200px;
-  width: 300px;
+  width: 350px;
   display: flex;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
 }
 
 .card-title{
   justify-content: center;
   align-items: center;
   color: white;
+}
+
+.card-body{
+  height: 100px;
+  width: 350px;
+  display: flex;
+  margin: auto;
+  margin-bottom: 70px;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
 }

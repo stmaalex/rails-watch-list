@@ -10,15 +10,14 @@
   </div>
 </div>
 
-<div id="lists">
-  <div class="container">
-    <div class="row">
-      <% @lists.each do |list| %>
-        <%= render list %>
-        <%# <p>
-          <%= link_to "Show this list", list, class: "btn btn-ghost" %>
-        <%# </p>  %>
-      <% end %>
+
+  <div class="list-container">
+    <div class="row mb-2">
+    <% @lists.each do |list| %>
+      <%= render list %>
+      <%# <p>
+        <%= link_to "Show this list", list, class: "btn btn-ghost" %>
+      <%# </p>  %>
+    <% end %>
     </div>
-  </div>
 </div>
