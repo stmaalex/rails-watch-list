@@ -1,16 +1,9 @@
-<%# <div id="<%= dom_id list %>
-  <%# <p>
-    <strong>Name:</strong>
-    <%= list.name %>
-  <%# </p> %>
 
-<%# </div> %>
-<div class="col-4">
-  <div class="card" style="background-image: url(<%= cl_image_path list.photo.key, crop: :fit %>); background-size: cover; background-position: center; background-repeat: no-repeat;">
+<div id="lol" class="col-4">
+  <div class="card" style="background-image: url(<%= cl_image_path list.photo.key, crop: :fill %>); background-size: cover; background-position: center; background-repeat: no-repeat;">
       <h5 class="card-title"> <%= list.name %> </h5>
   </div>
   <div class="card-body">
     <p> <%= link_to "Show this list", list, class: "btn btn-ghost2" %></p>
   </div>
 </div>
-<%# </div> %>

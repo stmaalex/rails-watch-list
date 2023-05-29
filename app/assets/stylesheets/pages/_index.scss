@@ -4,9 +4,12 @@
 .banner {
   background-size: cover;
   background-position: center;
-  padding: 100px 0;
+  padding: 150px 0;
   margin-bottom: 50px;
   width: 100%;
+  // margin-top: 0;
+  padding-top: 0px;
+  // margin-top: 170px;
 }
 
 .banner h1 {
@@ -37,7 +40,7 @@
 }
 
 .btn-ghost:hover {
-  background: #595941;
+  background: #b17000;
   color: white;
 }
 
@@ -49,6 +52,7 @@
   font-weight: lighter;
   opacity: 0.6;
   transition: opacity 0.3s ease;
+  margin-top: 7px;
 }
 
 .btn-ghost2:hover {
